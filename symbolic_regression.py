@@ -34,6 +34,6 @@ model = PySRRegressor(
 
 # NN for f1
 X = df.iloc[:, :4].to_numpy()
-f1 = df.loc[:, 'f2'].to_numpy()
+f1 = df.loc[:, 'f1'].to_numpy()
 
 model.fit(X, f1)
